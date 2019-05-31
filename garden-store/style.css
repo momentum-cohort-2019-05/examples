@@ -6,42 +6,59 @@
 
 body {
   font-family: sans-serif;
-  padding: 2rem;
 }
 
 p {
   margin-bottom: 1rem;
 }
 
-.site-nav {
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-    no-repeat center/cover url(grass.jpg);
-  padding: 10px;
-  margin: 20px 0;
-  border: 1px solid green;
-  border-radius: 10px;
-  /* width: 400px; */
-}
-
-.site-nav-list {
-  list-style: none;
-}
-
-.store-image {
+img {
   max-width: 100%;
 }
 
-.image {
-  width: 50%;
-  margin-left: 10px;
+body {
+  padding: 20px;
+  width: 900px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
-.description {
-  width: 50%;
+.site-nav {
+  margin: 20px 0;
+  background-color: #68952A;
+  padding: 10px 0;
 }
 
-.container {
+.site-nav ul {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.site-nav li {
+  margin: 0 10px;
+}
+
+.site-nav a {
+  color: white;
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+  }
+
+  .image {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .description {
+    width: 50%;
+  }
 }

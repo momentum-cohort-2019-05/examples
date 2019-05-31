@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.site-nav {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    no-repeat center/cover url(grass.jpg);
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid green;
+  border-radius: 10px;
+  /* width: 400px; */
+}
+
+.site-nav-list {
+  list-style: none;
+}
+
+.store-image {
+  max-width: 100%;
+}
+
+.image {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.description {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}

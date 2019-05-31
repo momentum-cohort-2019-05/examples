@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        .page-container {
+            margin: 1rem auto;
+            max-width: 900px;
+            background-color: lightgreen;
+        }
+
+        .header {
+            background-color: lightpink;
+            padding: 10px 15px;            
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .main-nav li {
+            margin-right: 10px;            
+        }
+
+        .main {          
+          display: flex;
+        }
+
+        .sidebar {
+          background-color: lightgoldenrodyellow;
+          width: 20%;
+          padding: 10px 15px;
+        }
+
+        .left-sidebar {
+          order: 1;          
+        }
+
+        .content {
+          order: 2;
+          width: 60%;
+          padding: 10px 15px;
+        }
+
+        .right-sidebar {
+          order: 3;          
+        }
+
+        .footer {
+          padding: 10px 15px;
+          background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Site Name</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="left-sidebar sidebar">
+                <p>this</p>                
+                <p>that</p>                
+                <p>the other</p>                
+            </div>
+            <div class="right-sidebar sidebar">
+                <h3>Other articles</h3>
+                <p>this</p>                
+                <p>that</p>                
+                <p>the other</p>                
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae sed nam iste alias, mollitia enim quos labore ducimus suscipit similique. Fugit quibusdam sit ut minima neque odio eveniet ipsum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae sed nam iste alias, mollitia enim quos labore ducimus suscipit similique. Fugit quibusdam sit ut minima neque odio eveniet ipsum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae sed nam iste alias, mollitia enim quos labore ducimus suscipit similique. Fugit quibusdam sit ut minima neque odio eveniet ipsum?</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div>This site &copy;2019 Jimmy Dean.</div>
+        </footer>
+    </div>
+</body>
+</html>

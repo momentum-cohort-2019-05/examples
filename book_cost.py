@@ -10,4 +10,4 @@ num_copies = int(num_copies_as_str)
 cost_of_books = (cover_price * num_copies) * (1.0 - bookstore_discount)
 cost_of_shipping = shipping_first_copy + (shipping_additional_copies *
                                           (num_copies - 1))
-print("Your total cost is", cost_of_books + cost_of_shipping)
+print("Your total cost is", round(cost_of_books + cost_of_shipping, 2))

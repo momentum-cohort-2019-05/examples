@@ -12,14 +12,12 @@ weight_limit = 100
 while not done:
     bag_weight_as_str = input(
         "How much does your bag weigh in pounds? (Hit Enter if you are done) ")
-    if bag_weight_as_str == "":
-        done = True
-    else:
-        bag_weight = int(bag_weight_as_str)
 
-        # Equivalent: total_weight += bag_weight
-        total_weight = total_weight + bag_weight
-        print("Your total weight so far is " + str(total_weight) + ".")
+    bag_weight = int(bag_weight_as_str)
+
+    # Equivalent: total_weight += bag_weight
+    total_weight = total_weight + bag_weight
+    print("Your total weight so far is " + str(total_weight) + ".")
 
 if total_weight > weight_limit:
     print("Warning! You are over the weight limit by " +

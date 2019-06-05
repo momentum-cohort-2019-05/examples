@@ -1,0 +1,4 @@
+AAA 4
+BBB 3
+CCC 1
+ZZZ 2

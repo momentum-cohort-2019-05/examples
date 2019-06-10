@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 jupyter = "*"
+pudb = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4af379d6a2c2be5b0be6d373111dd1376d3ae02ca533924c0f862c9b2423e719"
+            "sha256": "c8395688a8935d76e8ca75b6b8c56f45ed4aac5f02489deac16135d98d178743"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -237,9 +237,9 @@
         },
         "prometheus-client": {
             "hashes": [
-                "sha256:1b38b958750f66f208bcd9ab92a633c0c994d8859c831f7abc1f46724fcee490"
+                "sha256:ee0c90350595e4a9f36591f291e6f9933246ea67d7cd7d1d6139a9781b14eaae"
             ],
-            "version": "==0.6.0"
+            "version": "==0.7.0"
         },
         "prompt-toolkit": {
             "hashes": [
@@ -257,6 +257,13 @@
             "markers": "os_name != 'nt'",
             "version": "==0.6.0"
         },
+        "pudb": {
+            "hashes": [
+                "sha256:ac30cfc64580958ab7265decb4cabb9141f08781ff072e9a336d5a7942ce35a6"
+            ],
+            "index": "pypi",
+            "version": "==2019.1"
+        },
         "pygments": {
             "hashes": [
                 "sha256:71e430bc85c88a430f000ac1d9b331d2407f681d6f6aec95e8bcfbc3df5b0127",
@@ -266,8 +273,7 @@
         },
         "pyrsistent": {
             "hashes": [
-                "sha256:16692ee739d42cf5e39cef8d27649a8c1fdb7aa99887098f1460057c5eb75c3a",
-                "sha256:d7c2236d868ee78c04a708436de3e314351a63636c6940af0e4ccaa846f3a27c"
+                "sha256:16692ee739d42cf5e39cef8d27649a8c1fdb7aa99887098f1460057c5eb75c3a"
             ],
             "version": "==0.15.2"
         },
@@ -361,6 +367,12 @@
                 "sha256:c6cb5e6f57c5a9bdaa40fa71ce7b4af30298fbab9ece9815b5d995ab6217c7d9"
             ],
             "version": "==4.3.2"
+        },
+        "urwid": {
+            "hashes": [
+                "sha256:644d3e3900867161a2fc9287a9762753d66bd194754679adb26aede559bcccbc"
+            ],
+            "version": "==2.0.1"
         },
         "wcwidth": {
             "hashes": [

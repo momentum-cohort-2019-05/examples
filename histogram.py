@@ -12,12 +12,25 @@ def get_nums_from_file(file):
     return nums
 
 
+def get_band_for_value(num, band_size):
+    """
+    Given a number, find the band that the number will be sorted into.
+    """
+    return num // band_size * band_size
+
+
 def get_bands(nums, band_size):
     bands = {}
+    min_band = get_band_for_value(min(nums), band_size)
+    max_band = get_band_for_value(max(nums), band_size)
+    current_band = min_band
+
+    while current_band <= max_band:
+        bands[current_band] = 0
+        current_band += band_size
+
     for num in nums:
-        band = num // band_size * band_size
-        if band not in bands:
-            bands[band] = 0
+        band = get_band_for_value(num, band_size)
         bands[band] += 1
     return bands
 

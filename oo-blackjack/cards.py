@@ -49,8 +49,29 @@ class Deck:
         return self.cards.pop()
 
 
+class Hand:
+
+    def __init__(self):
+        self.cards = []
+
+    def add_card(self, card):
+        self.cards.append(card)
+
+    def get_value(self):
+        total = sum([card.get_value() for card in self.cards])
+        if total <= 11 and self.contains_rank("A"):
+            total += 10
+        return total
+
+    def contains_rank(self, rank):
+        return rank in [card.rank for card in self.cards]
+
+
 if __name__ == "__main__":
     deck = Deck()
     deck.shuffle()
     print(deck.draw_card())
     print(deck.draw_card())
+
+    my_hand = Hand()
+    my_hand.add_card(Card("9", "Clubs"))

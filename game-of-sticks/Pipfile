@@ -6,9 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-jupyter = "*"
-pudb = "*"
-jupyterlab = "*"
 
 [requires]
 python_version = "3.7"

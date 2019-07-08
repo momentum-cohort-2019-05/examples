@@ -1,12 +1,12 @@
 .PHONY: library-01 library-02 movies-01 movies-02 movies-03
 
 library-01:
-	psql library < 01/library/books-schema.sql
-	pgloader 01/library/books.load
+	psql library < library/01/books-schema.sql
+	pgloader library/01/books.load
 
 library-02: library-01
-	cat 02/library/create-*.sql | psql library
-	psql -q library < 02/library/patrons.sql
+	cat library/02/create-*.sql | psql library
+	psql -q library < library/02/patrons.sql
 
 movies:
 	dropdb movies

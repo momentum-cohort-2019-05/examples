@@ -18,6 +18,15 @@ We can use a relational database like PostgreSQL to store these relationships in
 
 A _foreign key_ is used to connect tables to form these relationships. Here is a simplified table structure for movies and studios:
 
+```py
+class Studio(models.Model):
+  name = models.CharField(max_length=100, unique=True)
+
+class Movie(models.Model):
+  title = models.CharField(max_length=255)
+  studio = models.ForeignKey(to=Studio)
+```
+
 ```sql
 CREATE TABLE studios (
   id SERIAL PRIMARY KEY,

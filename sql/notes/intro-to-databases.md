@@ -26,21 +26,18 @@ brew install postgresql
 brew services start postgresql
 ```
 
-Alternatively, use [Postgres.app](https://postgresapp.com/).
-
-
 ### Connecting to PostgreSQL
 
 Before we connect to PostgreSQL, we need a user and a database. Creating a user will vary based on your operating system, and your installation procedure may have set it up for you. If your username is `user`, then the commands would be:
 
 ```
-createuser -d user
+createuser -d <user>
 ```
 
 To create a database, run:
 
 ```
-createdb <database-name>
+createdb -U <user> <database-name>
 ```
 
 To start, make a database called `test`.

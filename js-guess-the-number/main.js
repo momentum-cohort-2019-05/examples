@@ -33,4 +33,12 @@ function startGame () {
   }
 }
 
-startGame()
+let person = 'Indigo'
+
+function sayHello () {
+  let greeting = 'Hi'
+  let person = 'Winter'
+  console.log('Hi, ' + person)
+}
+
+console.log('Hi, ' + person)

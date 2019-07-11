@@ -17,7 +17,7 @@ function populateCurrencies (currencyData) {
 }
 
 function convertCurrency () {
-  if (!rates) return
+  if (!rates) { return }
 
   const amount = parseFloat(amountField.value)
   const fromCurrency = fromDropdown.value
@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return response.json()
     })
     .then(function (data) {
-      console.log(data)
       rates = data.rates
       populateCurrencies(data)
     })

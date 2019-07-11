@@ -11,19 +11,22 @@
 <body>
   <div class="sans-serif mw7 center">
     <h1>Fantasy Currency Converter</h1>
-    <div class="flex">
-      <div class="w-50">
-        <h2>From</h2>
-        <p><input id="amount" type="number"></p>
-        <p><select id="currency-from" class="currency-dropdown"></select></p>
-      </div>
+    <form id="currency-form" data-hello="yep" data-my-car="toyota matrix">
+      <div class="flex">
+        <div class="w-50">
+          <h2>From</h2>
+          <p><input id="amount" type="number" required></p>
+          <p><select id="currency-from" class="currency-dropdown"></select></p>
+        </div>
 
-      <div class="w-50">
-        <h2>To</h2>
-        <p id="converted-amount">0</p>
-        <p><select id="currency-to" class="currency-dropdown"></select></p>
+        <div class="w-50">
+          <h2>To</h2>
+          <p id="converted-amount">0</p>
+          <p><select id="currency-to" class="currency-dropdown"></select></p>
+          <p><button type="submit" id="convert-button">Convert</button></p>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
   
 </body>

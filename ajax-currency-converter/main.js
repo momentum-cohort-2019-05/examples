@@ -48,7 +48,12 @@ document.addEventListener('DOMContentLoaded', function () {
       populateCurrencies(data)
     })
 
-  amountField.addEventListener('input', convertCurrency)
-  fromDropdown.addEventListener('input', convertCurrency)
-  toDropdown.addEventListener('input', convertCurrency)
+  document.querySelector('#currency-form').addEventListener('submit', function (event) {
+  // document.querySelector('#convert-button').addEventListener('click', function (event) {
+    event.preventDefault()
+    convertCurrency()
+  })
+  // amountField.addEventListener('input', convertCurrency)
+  // fromDropdown.addEventListener('input', convertCurrency)
+  // toDropdown.addEventListener('input', convertCurrency)
 })

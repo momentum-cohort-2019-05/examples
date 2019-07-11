@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <script src="main.js" defer></script>
+  <style>
+    .planet {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="sans-serif mw7 center">    
+    <h1>Find a planet!</h1>
+    <form>
+      <p>
+        <label for="planet-name">Search term</label>
+        <input type="text" id="planet-name">
+      </p>
+      <p>
+        <button type="submit">Search</button>
+      </p>
+    </form>
+    <div class="flex">
+      <section class="w-50" id="planet-results"></section>
+      <section class="w-50" id="planet-data"></section>
+    </div>
+    
+
+  </div>
+  
+</body>
+</html>
